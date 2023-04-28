@@ -576,7 +576,7 @@ button {
     right: 0;
     bottom: 0;
     transition: opacity 250ms, visibility 250ms;
-    background-color: rgba(46, 47, 66, 0.4), var(--navy-blue-modal);
+    background-color: rgba(46, 47, 66, 0.4);
 }
 
 .backdrop.is-hidden {
