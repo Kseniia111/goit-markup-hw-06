@@ -66,6 +66,9 @@ button {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    /*outline: 2px solid red;
+    outline-offset: -2px;*/
 }
 
 .section {
@@ -461,13 +464,15 @@ button {
     display: flex;
     
 }
-
+.footer-subscribe {
+   margin-left: -40px;
+}
 .subscribe-input {
     min-width: 264px;
     height: 40px;
     background-color: var(--navy-blue);
     border: 1px solid var(--white);
-    filter: drop-shadow (0 4px 4px 
+    filter: drop-shadow(0 4px 4px 
     rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     font-size: 12px;
@@ -650,11 +655,6 @@ button {
 .backdrop.is-hidden .modal {
    transform: translate(-50%, -50%) scale(0.1);
 }
-.modal-container {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
 
 .modal-close-btn {
     display: flex;
@@ -700,7 +700,6 @@ button {
 .modal-form-label {
     display: block;
     margin-bottom: 4px;
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.04em;
@@ -731,9 +730,7 @@ button {
 }
 
 .modal-form-input:focus + .modal-form-icon {
-    
     fill: var(--iris);
-   
 }
 
 .modal-form-icon {
@@ -753,7 +750,6 @@ button {
     width: 360px;
     min-height: 120px;
     resize: none;
-    font-size: 12px;
     padding: 8px 16px;
 
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -775,15 +771,18 @@ button {
 
 .modal-form-agreement {
     display: flex;
+    position: relative;
+   
     text-align: center;
     align-items: center;
     margin-bottom: 24px;
     gap: 8px;
-    
 }
 
-.modal-form-agreement-checked {
-    position: relative;
+.modal-form-agreement-text {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--light-slate);
 }
 
 .modal-form-agreement-box {
@@ -812,19 +811,15 @@ button {
 .modal-form-agreement-box:checked {
     background-color: var(--ocean);
     border-color: var(--ocean);
-      
 }
 
 .modal-form-agreement-box:checked + .modal-form-agreement-icon {
     fill: var(--cloud);
 }
 
-.modal-form-agreement-text {
-    font-size: 12px;
-    letter-spacing: 0.04em;
-    color: var(--light-slate);
-}
-
 .modal-form-agreement-link {
     color: var(--iris);
+}
+.modal-btn {
+    
 }
